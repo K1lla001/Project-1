@@ -1,0 +1,403 @@
+:root {
+  --main-color: #ed1b24;
+  --shadow-color: rgba(183, 176, 176, 0.4);
+  --shadow-color2: rgba(255, 255, 255, 0.8);
+  --second-color: #fa9b27;
+  --third-color: #1b2430;
+  --four-color: #082032;
+  /* FONT */
+  --main-font: "Poppins", sans-serif;
+  --second-font: "Roboto", sans-serif;
+  --third-font: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/* body {
+} */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem var(--shadow-color);
+  z-index: 100;
+}
+.logo {
+  padding-left: 30px;
+}
+.logo img {
+  width: 90px;
+}
+.navigasi-ul {
+  width: 45%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-right: 10px;
+}
+.navigasi-ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--main-font);
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  border-radius: 17px;
+}
+.navigasi-ul li a:hover {
+  background: var(--main-color);
+  color: white;
+}
+/* HAMBURGER MENU */
+.burger-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 7px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+/* HAMBURGER MENU END */
+
+/* BAGIAN HOME */
+.container {
+  background-image: url(/img/bg1.jpg);
+  background-size: cover;
+}
+div.menu {
+  width: 100%;
+  height: 100vh;
+}
+.text-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+.text-home h2 {
+  font-family: var(--main-font);
+  margin-bottom: 5rem;
+  letter-spacing: 0.15rem;
+}
+.text-home a {
+  font-family: var(--third-font);
+  color: white;
+  background-color: var(--main-color);
+  padding: 15px 25px;
+  border-radius: 25px;
+  transition: all 0.5s ease-out;
+}
+.text-home a:hover {
+  background-color: var(--second-color);
+}
+/* BAGIAN HOME END */
+/* ABOUT */
+section {
+  padding-top: 70px;
+}
+div.about {
+  background-image: linear-gradient(white, white);
+  padding-top: 2rem;
+}
+.flex-container {
+  display: flex;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text-left {
+  padding-top: 3rem;
+  padding-left: 5rem;
+  font-family: var(--main-font);
+}
+.text-left h4 {
+  margin-top: -5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 1.8rem;
+}
+.img img {
+  width: 100%;
+}
+.text-left a {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  color: black;
+  transition: color 0.2s ease-out;
+  padding: 10px;
+}
+.text-left a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+/* ABOUT END*/
+
+/* HIRAGANA SECTION */
+div.hiragana {
+  margin-top: 25px;
+  background-image: linear-gradient(white, var(--main-color));
+  height: auto;
+}
+div.content {
+  width: 90%;
+  margin: 0 auto;
+  font-family: var(--main-font);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  z-index: -1;
+}
+div.hiragana .box {
+  flex: 1 12rem;
+  height: 10rem;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid var(--second-color);
+  background-color: white;
+}
+div.hiragana .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+div.hiragana .box:hover img {
+  height: 82%;
+  width: 75%;
+}
+div.hiragana .box h3 {
+  position: absolute;
+  left: 25%;
+  bottom: 5px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+div.hiragana .box .icons {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+div.hiragana .box .icons a {
+  display: block;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  background: #333;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+div.hiragana .box .icons a:hover {
+  background-color: var(--main-color);
+}
+/* HIRAGANA SECTION end*/
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/* RESPONSIVE BREAKPOINTS */
+@media screen and (max-width: 900px) {
+  /* NAVIGASI LIST */
+  .navigasi-ul {
+    position: absolute;
+    display: block;
+    padding: 10px 0;
+    top: 79px;
+    left: -100%;
+    transition: all 0.35s ease-in;
+    background-color: var(--shadow-color2);
+    border-bottom: 0.9px solid var(--shadow-color);
+    width: 100%;
+  }
+  .navigasi-ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font);
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navigasi-ul li a:hover {
+    background: none;
+    color: var(--second-color);
+  }
+  /* NAVIGASI LIST END */
+
+  .burger-menu {
+    display: block;
+    margin-right: 15px;
+  }
+  /* JAVASCRIPT ACTIVATED */
+  .burger-menu.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .navigasi-ul.active {
+    left: 0;
+  }
+  .text-left {
+    flex: 1 1 20px;
+  }
+  .grid-hiragana {
+    padding: 0;
+  }
+  /* hiragana */
+  /* div.hiragana .box {
+    flex: 1 7rem;
+    height: 8rem;
+  }
+  div.hiragana .box img {
+    object-position: -15px;
+  }
+  div.hiragana .box h3 {
+    left: 15%;
+  }
+  div.hiragana .box .icons a {
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+  } */
+}
+
+/* mobile */
+@media screen and (max-width: 596px) {
+  .container {
+    height: 100vh;
+    padding: 10px;
+  }
+  .navbar {
+    background-color: var(--shadow-color2);
+  }
+  .logo {
+    padding: 0;
+  }
+  /* NAVIGASI LIST */
+  .navigasi-ul {
+    position: absolute;
+    top: 79px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    left: -100%;
+    transition: all 0.35s ease-in;
+    background-color: var(--shadow-color2);
+    border-bottom: 0.9px solid var(--shadow-color);
+  }
+  .navigasi-ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font);
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navigasi-ul li a:hover {
+    background: none;
+    color: var(--second-color);
+  }
+  /* NAVIGASI LIST END */
+
+  .burger-menu {
+    display: block;
+    margin-right: 15px;
+  }
+  /* JAVASCRIPT ACTIVATED */
+  .burger-menu.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .navigasi-ul.active {
+    left: 0;
+  }
+  /* HOME SECTION */
+  /* HOME SECTION END */
+  /* SECTION ABOUT */
+  .text-left {
+    padding-left: 0;
+    padding-bottom: 4rem;
+  }
+  .text-left h4 {
+    margin-bottom: 10px;
+  }
+  .grid-hiragana {
+    padding: 0;
+    margin-top: 5rem;
+  }
+  /* SECTION ABOUT  end*/
+  /* HIRAGANA SECTION */
+
+  div.hiragana .box {
+    width: 100%;
+    height: 230px;
+    border: none;
+    border-radius: 10px;
+  }
+  div.hiragana .box h3 {
+    left: 35%;
+  }
+  div.hiragana .box:hover img {
+    height: 195px;
+    width: 80%;
+  }
+  /* HIRAGANA SECTION END */
+}
